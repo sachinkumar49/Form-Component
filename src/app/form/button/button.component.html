@@ -1,0 +1,1 @@
+<p-button  type = "{{button.type}}"  styleClass ="{{button.severity}}" disabled ="{{button.disabled}}" (onClick) = "onClickEvent(button,$event)" (onFocus) = "onFocusEvent(button,$event)" (onBlur) = "onBlurEvent(button,$event)" label="{{button.label}}" icon="{{button.icon}}" title="{{button.label}}" iconPos="{{button.iconPos}}" *ngFor="let button of buttonConfig"></p-button>

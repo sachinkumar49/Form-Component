@@ -1,0 +1,46 @@
+<div *ngIf ="queriesLength" style="margin-bottom: 15px;">
+  <p-accordion>
+      <p-accordionTab header="Saved search ({{queriesLength}})">
+          <ul *ngFor ="let item of savedQueries.items" class="privateSearches">
+              <span>{{item.label}}</span>
+              <li *ngFor ="let query of item.queries" class= "savedQuery" >
+                  <div class="flexbox">
+                      <a (click) = "runSavedQuery(query)" id="{{query.id}}" href="javascript:void(0)">{{query.label}}</a>&nbsp;&nbsp;
+                       <span [ngClass]="{icon_makeDefault : query.isFavourite}">
+                       </span>
+                    </div>
+                    <div class="align-self-center flexbox">
+                      <span class="dropdown">
+                        <span id="dLabel" [attr.disabled]="disableButton" role="button" data-toggle = "dropdown" class="btn ellipsis-horizontal"  href="javascript:void(0)" aria-expanded="true">
+                        </span>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu">
+                          <ng-container *ngFor = "let action of savedQueries.rowActions" >
+                            <li *ngIf="query.supportedAction[action.id]" (click) = "onQueryAction(action, query);">
+                              <a ><span class="icon_{{action.id}}"></span>{{action.label}}</a>
+                            </li>
+                        </ng-container>
+                        </ul>
+                      </span>
+                  </div>
+                </li>
+            </ul>
+      </p-accordionTab>
+  </p-accordion>
+</div>
+
+<app-modal modalId ="querySlider">
+  <div modal-title>
+     <h3>Save search</h3> 
+  </div>
+  <div modal-body>
+    <app-basic-form [formData]="sliderData" (clearForm) ="clearForm($event)" >
+    </app-basic-form>
+    <app-advance-form [formData]="advanceSliderData" [loadOperator] ="loadOperator"></app-advance-form>
+    <app-button-group [buttonConfig]="buttonConfig" (onClick) ="saveQ($event)"></app-button-group>
+  </div>
+</app-modal>
+
+
+
+
+

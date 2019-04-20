@@ -1,0 +1,109 @@
+<div [formGroup] = "formControlObject" class="d-flex flex-row">
+<ng-container *ngFor="let formField of fields;let i=index" [ngSwitch]="formField.type.toLowerCase()">
+  		<div *ngSwitchCase="'text'" >
+			<input 
+			[pKeyFilter]="formField.keyFilter" 
+			autocomplete="false" 
+			class="form-control"
+			type="text" 
+			pInputText 
+			[formControlName] = "formField.id"
+			name="inputComponent" />
+			<ng-container [ngTemplateOutlet] ="betweenPopup"></ng-container>
+  		</div>
+		<div *ngSwitchCase="'checkbox'" >
+			<p-checkbox (onChange)="checkboxEvent($event, formField)"
+			value="{{subItem.value}}" label="{{subItem.label}}"
+			[formControl]="form.controls[formField.id]"
+			></p-checkbox>
+		</div>
+		<div *ngSwitchCase="'radio'" >
+			<p-radioButton value="{{subItem.value}}" 
+			label="{{subItem.label}}"
+			*ngFor="let subItem of formField.options" 
+			inputId="subItem.id" 
+			[formControlName] = "formField.id"
+			(onClick)="radioButtonEvent($event)"
+			name="groupname"></p-radioButton>
+		</div>
+		<div *ngSwitchCase="'select'" >
+			<p-dropdown (onBlur)="selectBlurEvent($event, formField)"
+			(onChange)="selectChangeEvent($event, formField)"
+			(onFocus)="selectFocusEvent($event, formField)" 
+			(onClick)="selectClickEvent($event, formField)"
+			(onShow)="selectShowEvent($event, formField)" 
+			(onHide)="selectHideEvent($event, formField)"
+			[formControlName] = "formField.id"
+			[options]="formField.options" ></p-dropdown>
+		</div>
+		<div *ngSwitchCase="'textarea'">
+			<textarea (onResize)="textareaResizeEvent($event, formField)"
+			pInputTextarea
+			[formControlName] ="formField.id">
+			</textarea>
+		</div>
+		<div *ngSwitchCase ="'multiselect'" >
+			<p-multiSelect filter="true" 
+			filterPlaceholder="Search" 
+			[maxSelectedLabels]="1" 
+			[resetFilterOnHide]="true"
+			(onChange)="multiselectChangeEvent($event, formField)"
+			(onPanelHide)="multiselectPanelHideEvent($event, formField)"
+			(onPanelShow)="multiselectPanelShowEvent($event, formField)"
+			(onBlur)="multiselectBlurEvent($event, formField)" 
+			(onFocus)="multiselectFocusEvent($event, formField)"
+			[formControlName] = "formField.id"
+			[options]="formField.options">
+			</p-multiSelect>
+		</div>
+		<div *ngSwitchCase="'date'" >
+			<p-calendar name="date" 
+			[locale]="formField.locale || locale" 
+			[dateFormat]="formField.dateFormat || dateFormat"
+			[minDate]="formField.minDate || minDate" 
+			[maxDate]="formField.maxDate || maxDate"
+			[disabledDates]="formField.disableDates" 
+			[disabledDays]="formField.disabledDays"
+			[monthNavigator]="monthNavigator" 
+			[yearNavigator]="yearNavigator" 
+			[yearRange]="yearRange"
+			[showTime]="showTime" 
+			[timeOnly]="timeOnly" 
+			selectionMode="selectionMode" 
+			[showButtonBar]="showButtonBar"
+			[numberOfMonths]="1" 
+			[readonlyInput]="true" 
+			(onBlur)="datePickerBlurEvent($event,formField)" 
+			(onYearChange)="datePickerYearChangeEvent($event,formField)"
+			(onSelect)="datePickerSelectEvent($event,formField)" 
+			(onClose)="datePickerCloseEvent($event,formField)"
+			(onInput)="datePickerInputEvent($event,formField)" 
+			(onFocus)="datePickerFocusEvent($event,formField)"
+			(onTodayClick)="datePickerTodayClickEvent($event,formField)"
+			(onClearClick)="datePickerClearClickEvent($event,formField)"
+			(onMonthChange)="datePickerMonthChangeEvent($event,formField)"
+			[formControlName] ="formField.id">
+			</p-calendar>
+		</div>
+</ng-container>
+</div>
+
+
+<ng-template #betweenPopup>
+	<div *ngIf="openPopup" class="operator_popup">
+	  <div>
+		<div>
+		  <label for="from" id="fromLabel">From</label>
+		  <input [(ngModel)]="from" id="from" [ngModelOptions]="{standalone: true}" (blur)="inputBlur(from, $event)" />
+		</div>
+		<div>
+		  <label for="to" id="toLabel">To</label>
+		  <input [(ngModel)]="to" id="to" [ngModelOptions]="{standalone: true}" (blur)="inputBlur(to, $event)" />
+		</div>
+	  </div>
+	  <div>
+		<button type="button" (click)="cancelPopup()">cancel</button>
+		<button type="button" (click)="savePopup(from,to,formItem)">save</button>
+	  </div>
+	</div>
+</ng-template>

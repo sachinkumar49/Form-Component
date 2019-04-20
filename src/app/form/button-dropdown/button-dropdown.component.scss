@@ -1,0 +1,153 @@
+:host {   
+    .transperant-btn {
+        .btn {
+            background: white !important;
+            color: #333333 !important;
+            border: 0px;
+            padding: 0px;
+            font-size:14px !important;
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+        }
+        .dropdown-toggle::after {
+            margin-left:0.9em !important;
+        }
+        .dropdown-menu {
+            padding: 0px !important;
+            min-width: 101px;
+            max-width: 330px;
+            margin-top: 10px;
+            border-radius: 0px;
+            border: 1px solid #bbb !important;
+            li {
+                a {
+                    padding: 6px 12px !important;
+                    line-height: 24px;
+                    box-sizing: border-box;
+                    white-space: normal;
+                    box-shadow: none;
+                    width: 100%;
+                    margin: 0;
+                    font-size: 14px !important;
+                    &:hover, &:focus {
+                        text-decoration: none;
+                        color: #262626;
+                        background-color: #DCDCDC;
+                    }
+                    display: inline-block;
+                }
+                .actionDisable {
+                    cursor: default !important;
+                    opacity: 0.5 !important;
+                }
+            }
+             
+        }
+     }
+     
+     .bulkaction-btn {
+        display: inline-block;
+        .btn {
+            background: #0288d1 !important;
+            color: white !important;
+            font-size:14px !important;
+            border: 1px solid white !important;
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+        }
+        .dropdown-toggle::after {
+            margin-left:0.9em !important;
+        }
+        .dropdown-menu {
+            padding: 0px !important;
+            min-width: 130px;
+            max-width: 330px;
+            margin-top: 0px;
+            border-radius: 0px;
+            border: 1px solid #bbb !important;
+            li {
+                a {
+                    padding: 6px 12px !important;
+                    line-height: 24px;
+                    box-sizing: border-box;
+                    white-space: normal;
+                    box-shadow: none;
+                    width: 100%;
+                    margin: 0;
+                    font-size: 14px !important;
+                    font-weight: normal !important;
+                    &:hover, &:focus {
+                        text-decoration: none;
+                        color: #262626;
+                        background-color: #DCDCDC;
+                    }
+                    display: inline-block;
+                }
+
+                .actionDisable {
+                    cursor: default !important;
+                    opacity: 0.5 !important;
+                }
+            }
+             
+        }
+    }
+
+    .jumpAnotherTask-btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 17px;
+        .btn {
+            background: #ffffff !important;
+            color: #262626 !important;
+            font-size:14px !important;
+            border: 1px solid #adadad !important;
+            border-radius: 0px;
+            padding: .44rem .75rem !important;
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+        }
+        .dropdown-toggle::after {
+            margin-left:3.7em !important;
+        }
+        .dropdown-menu {
+            padding: 0px !important;
+            min-width: 130px;
+            max-width: 219px;
+            margin-top: -1px;
+            border-radius: 0px;
+            border: 1px solid #bbb !important;
+            li {
+                a {
+                    padding: 6px 12px !important;
+                    line-height: 24px;
+                    box-sizing: border-box;
+                    white-space: normal;
+                    box-shadow: none;
+                    width: 100%;
+                    margin: 0;
+                    font-size: 14px !important;
+                    font-weight: normal !important;
+                    &:hover, &:focus {
+                        text-decoration: none;
+                        color: #262626;
+                        background-color: #DCDCDC;
+                    }
+                    display: inline-block;
+                }
+
+                .actionDisable {
+                    cursor: default !important;
+                    opacity: 0.5 !important;
+                }
+            }
+             
+        }
+    }
+}

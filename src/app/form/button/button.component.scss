@@ -1,0 +1,115 @@
+:host
+{
+    display: flex; 
+    justify-content: flex-end;
+    &.display_row
+    {  
+     justify-content: flex-start;  
+     &.display_position_right
+      {
+        justify-content: flex-end;
+      }
+    }
+    &.display_row_reverse
+    {  
+     justify-content: flex-start;
+     p-button:not(:last-child){ 
+        margin-left:15px;
+     }
+      &.display_position_left
+      {
+        justify-content: flex-end;
+        p-button:not(:last-child){ 
+        margin-left:15px;
+        } 
+        p-button:last-child{ 
+        margin-left:0px;
+        }
+      }  
+    }
+    &.display_column
+    {
+        p-button{
+        margin-bottom:0px;  
+        margin-left:0px !important;
+        }
+    }
+    &.display_column_reverse
+    {
+        p-button{
+        margin-bottom:0px;
+        margin-left:0px !important; 
+    }
+    }
+    p-button
+    { 
+         &:not(:first-child){
+            margin-left:15px    
+        }
+        ::ng-deep{
+            button{
+                min-width:100px;
+                height:36px;
+                background-color:#0288d1;
+                border:1px solid #0288d1;
+            &.ui-button
+            {
+                &:enabled{
+                    &:hover{
+                    background-color:#027bbc;    
+                    box-shadow: 0px 2px 5px grey;
+                   }
+                   &:active{
+                     box-shadow: 0px 5px 8px grey;
+                     background-color: #0288d1; 
+                   }
+
+                }
+                &:disabled{
+                    opacity: .5
+                }
+            }
+            &.primary
+            {
+                &:enabled:hover{
+                background-color: #007ad9;
+                border-color: #007ad9;
+                } 
+                &:enabled:active{
+                background-color: #007ad9;
+                border-color: #007ad9;
+                }
+            }
+            &.flat
+            {  
+                background-color: transparent;
+                border:transparent;   
+                color: #0288D1;
+                &:enabled:hover{
+                background-color: #fff;
+                border:#fff;  
+                color:#0288D1;
+                }
+            }
+            &.secondary
+            {
+            background-color: #009688;  
+            border:#009688; 
+            &:enabled:hover
+            {
+                background-color: #009688;  
+                border:#009688;    
+            }
+            }
+            &.tertiary
+            {   background-color: #5A7481;
+                border:#5A7481;
+                &:enabled:hover{
+                background-color: #5A7481;
+                border:#5A7481;  
+                }
+            }
+            }
+        }
+    }  
+}

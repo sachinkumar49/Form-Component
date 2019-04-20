@@ -1,0 +1,1036 @@
+, {
+			"id": "ClaimType",
+			"label": "Claim type",
+			"value": "",
+			"selected": null,
+			"optionDataKey": "ClaimTypeOptionList",
+			"options": [{
+				"id": "1",
+				"label": "CD-Cash Discount"
+			}, {
+				"id": "2",
+				"label": "CV-CRV Repays"
+			}, {
+				"id": "3",
+				"label": "FR-Freight"
+			}, {
+				"id": "4",
+				"label": "LC-List Cost"
+			}, {
+				"id": "5",
+				"label": "NC-Non Compliance"
+			}, {
+				"id": "6",
+				"label": "EC-EDI Non Compliance"
+			}, {
+				"id": "7",
+				"label": "OI-Off Invoice"
+			}, {
+				"id": "8",
+				"label": "OV-Overage"
+			}, {
+				"id": "9",
+				"label": "PS-Shipper Billing"
+			}, {
+				"id": "10",
+				"label": "PU-Pickup Allowance"
+			}, {
+				"id": "11",
+				"label": "RT-Return Issues"
+			}, {
+				"id": "12",
+				"label": "SH-Shortage"
+			}, {
+				"id": "13",
+				"label": "SP-Stop Payment"
+			}, {
+				"id": "15",
+				"label": "MR-Medturn Returns"
+			}, {
+				"id": "16",
+				"label": "WV-Wrong Vendor"
+			}, {
+				"id": "17",
+				"label": "PC-Promo - Coupons"
+			}, {
+				"id": "18",
+				"label": "PSR-Promo - Scan – Incorrect Rate"
+			}, {
+				"id": "19",
+				"label": "PSD-Promo - Scan – Incorrect Dates"
+			}, {
+				"id": "20",
+				"label": "PSP-Promo - Scan – Incorrect Performance"
+			}, {
+				"id": "21",
+				"label": "PSI-Promo - Scan – Incorrect Items"
+			}, {
+				"id": "22",
+				"label": "KSR-Promo - KATS – Incorrect Rate"
+			}, {
+				"id": "23",
+				"label": "KSD-Promo - KATS – Incorrect Dates"
+			}, {
+				"id": "24",
+				"label": "KSP-Promo - KATS – Incorrect Performance"
+			}, {
+				"id": "25",
+				"label": "KSI-Promo - KATS – Incorrect Items"
+			}, {
+				"id": "26",
+				"label": "PLD-Promo - Loss/Damage"
+			}, {
+				"id": "27",
+				"label": "ORAD - Late Shipment"
+			}, {
+				"id": "28",
+				"label": "ORAD - Case Fill Rate"
+			}, {
+				"id": "29",
+				"label": "KSD - Promo - KATS – Incorrect Dates"
+			}, {
+				"id": "30",
+				"label": "KSI - Promo - KATS – Incorrect Items"
+			}, {
+				"id": "31",
+				"label": "KSP - Promo - KATS – Incorrect Performance"
+			}, {
+				"id": "32",
+				"label": "KSR - Promo - KATS – Incorrect Rate"
+			}, {
+				"id": "33",
+				"label": "PC - Promo - Coupons"
+			}, {
+				"id": "34",
+				"label": "PLD - Promo - Loss/Damage"
+			}, {
+				"id": "35",
+				"label": "PSD - Promo - Scan – Incorrect Dates"
+			}, {
+				"id": "36",
+				"label": "PSI - Promo - Scan – Incorrect Items"
+			}, {
+				"id": "37",
+				"label": "PSP - Promo - Scan – Incorrect Performance"
+			}, {
+				"id": "38",
+				"label": "PSR - Promo - Scan – Incorrect Rate"
+			}, {
+				"id": "39",
+				"label": "WV - Wrong Vendor Promo"
+			}, {
+				"id": "40",
+				"label": "Duplicate"
+			}, {
+				"id": "41",
+				"label": "Slotting"
+			}, {
+				"id": "42",
+				"label": "Cancelled Contract"
+			}, {
+				"id": "43",
+				"label": "Misc."
+			}, {
+				"id": "44",
+				"label": "Billing Detail Request"
+			}],
+			"type": "multiSelect",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "IN",
+				"label": "IN"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "ClaimStatus",
+			"label": "Claim status",
+			"value": "",
+			"selected": null,
+			"options": [{
+				"id": "1",
+				"label": "Open"
+			}, {
+				"id": "2",
+				"label": "Pending"
+			}, {
+				"id": "4",
+				"label": "Closed"
+			}, {
+				"id": "5",
+				"label": "Pending Update"
+			}],
+			"type": "multiSelect",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "IN",
+				"label": "IN"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "ClaimResolution",
+			"label": "Claim resolution",
+			"value": "",
+			"selected": null,
+			"options": [{
+				"id": "15701",
+				"label": "Denied"
+			}, {
+				"id": "15702",
+				"label": "Partially Paid"
+			}, {
+				"id": "15703",
+				"label": "Paid"
+			}],
+			"type": "multiSelect",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "IN",
+				"label": "IN"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "AssignedUser",
+			"label": "Assigned user",
+			"value": "",
+			"selected": null,
+			"options": [{
+				"id": "250442",
+				"label": "CategoryMgr (categorymgr@FoodSavers.com)"
+			}, {
+				"id": "250440",
+				"label": "clerk (clerk@FoodSavers.com)"
+			}, {
+				"id": "250526",
+				"label": "DMM Merchandising (merchdmm@foodsavers.com)"
+			}, {
+				"id": "250449",
+				"label": "FAR (far@FoodSavers.com)"
+			}, {
+				"id": "250452",
+				"label": "FAR COORDINATOR (farcoordinator@FoodSavers.com)"
+			}, {
+				"id": "250488",
+				"label": "Foodsaver01 (Foodsaver01@gmail.com)"
+			}, {
+				"id": "250443",
+				"label": "FoodSavers Buyer (buyer@FoodSavers.com)"
+			}, {
+				"id": "250447",
+				"label": "FoodSavers Controller (controller@FoodSavers.com)"
+			}, {
+				"id": "250446",
+				"label": "FoodSavers Co-ordinator (coordinator@FoodSavers.com)"
+			}, {
+				"id": "250448",
+				"label": "Foodsavers Manager (prgxmanager@FoodSavers.com)"
+			}, {
+				"id": "250445",
+				"label": "Foodsavers PRGX Clerk (prgx@FoodSavers.com)"
+			}, {
+				"id": "250457",
+				"label": "FoodSavers Supplier Admin (supplieradmin@FoodSavers.com)"
+			}, {
+				"id": "250454",
+				"label": "FoodSavers Supplier Viewer (FoodSaverssupplierviewer@FoodSavers.com)"
+			}, {
+				"id": "250444",
+				"label": "FoodSavers Traffic (traffic@FoodSavers.com)"
+			}, {
+				"id": "250441",
+				"label": "FoodSavers Warehouse (warehouse@FoodSavers.com)"
+			}, {
+				"id": "250428",
+				"label": "FoodSaversAdmin (Lavante) (FoodSavers.admin@FoodSavers.com)"
+			}, {
+				"id": "250497",
+				"label": "Joe Smith (joe.smith@foodsavers.com)"
+			}, {
+				"id": "250451",
+				"label": "NAR (nar@FoodSavers.com)"
+			}, {
+				"id": "250453",
+				"label": "Narcoordinator (narcoordinator@FoodSavers.com)"
+			}, {
+				"id": "251234",
+				"label": "Niley Links (nileylink@foodsavers.com)"
+			}, {
+				"id": "250450",
+				"label": "PAR (PAR@FoodSavers.com)"
+			}, {
+				"id": "250482",
+				"label": "PAR Coordinator (parcoordinator@foodsavers.com)"
+			}, {
+				"id": "250456",
+				"label": "Supplier Advance (advance@FoodSavers.com)"
+			}, {
+				"id": "250455",
+				"label": "Supplier Basic (basic@FoodSavers.com)"
+			}, {
+				"id": "250704",
+				"label": "The Viewer (viewer@foodsavers.com)"
+			}, {
+				"id": "250458",
+				"label": "Vendor NC (vendornc@FoodSavers.com)"
+			}],
+			"type": "multiSelect",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "IN",
+				"label": "IN"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "AssignedRole",
+			"label": "Assigned role",
+			"value": "",
+			"selected": null,
+			"options": [{
+				"id": "65",
+				"label": "Administrator"
+			}, {
+				"id": "66",
+				"label": "AP"
+			}, {
+				"id": "67",
+				"label": "Buyer"
+			}, {
+				"id": "68",
+				"label": "Viewer"
+			}, {
+				"id": "309",
+				"label": "FoodSavers Assistant Controller"
+			}, {
+				"id": "305",
+				"label": "FoodSavers Buyers"
+			}, {
+				"id": "304",
+				"label": "FoodSavers Category Manager"
+			}, {
+				"id": "302",
+				"label": "FoodSavers Clerk"
+			}, {
+				"id": "311",
+				"label": "FoodSavers Clerk FAR"
+			}, {
+				"id": "313",
+				"label": "FoodSavers Clerk NAR"
+			}, {
+				"id": "312",
+				"label": "FoodSavers Clerk PAR"
+			}, {
+				"id": "308",
+				"label": "FoodSavers Coordinator"
+			}, {
+				"id": "316",
+				"label": "FoodSavers Coordinator FAR"
+			}, {
+				"id": "318",
+				"label": "FoodSavers Coordinator NAR"
+			}, {
+				"id": "317",
+				"label": "FoodSavers Coordinator PAR"
+			}, {
+				"id": "315",
+				"label": "FoodSavers Merch DMM"
+			}, {
+				"id": "314",
+				"label": "FoodSavers NAR Gen Merch"
+			}, {
+				"id": "307",
+				"label": "FoodSavers PRGX Clerk"
+			}, {
+				"id": "310",
+				"label": "FoodSavers PRGX Manager"
+			}, {
+				"id": "306",
+				"label": "FoodSavers Traffic"
+			}, {
+				"id": "323",
+				"label": "FoodSavers Vendor Non-Compliance"
+			}, {
+				"id": "303",
+				"label": "FoodSavers Warehouse"
+			}, {
+				"id": "324",
+				"label": "Lavante Data Services"
+			}],
+			"type": "multiSelect",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "IN",
+				"label": "IN"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "AssignedGroup",
+			"label": "Assigned group",
+			"value": "",
+			"selected": null,
+			"options": [{
+				"id": "01.01.010",
+				"label": "01.01.010 Org Owner"
+			}, {
+				"id": "KRG-FARPAR",
+				"label": "FAR/PAR Clerk Group"
+			}],
+			"type": "multiSelect",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "IN",
+				"label": "IN"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "PaymentReferenceNumber",
+			"label": "Payment reference number",
+			"value": "",
+			"selected": null,
+			"optionDataKey": null,
+			"options": null,
+			"type": "text",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "EqualsTo",
+				"label": "EqualsTo"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "TradePointDealNumber",
+			"label": "Tradepoint deal number",
+			"value": "",
+			"selected": null,
+			"optionDataKey": null,
+			"options": null,
+			"type": "text",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "Contains",
+				"label": "Contains"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "InvoiceNumber",
+			"label": "Invoice number",
+			"value": "",
+			"selected": null,
+			"optionDataKey": null,
+			"options": null,
+			"type": "text",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "Contains",
+				"label": "Contains"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "InvoiceCategory",
+			"label": "Invoice category",
+			"value": "",
+			"selected": null,
+			"optionDataKey": null,
+			"options": null,
+			"type": "text",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "Contains",
+				"label": "Contains"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "Division",
+			"label": "Division",
+			"value": "",
+			"selected": null,
+			"options":  [{
+				"id": "1723",
+				"label": "abc"
+			}, {
+				"id": "1518",
+				"label": "003 - COLUMBUS BAKERY"
+			}, {
+				"id": "1519",
+				"label": "005 - INDIANAPOLIS BAKERY"
+			}, {
+				"id": "1520",
+				"label": "010 - RALPHS - RIVERSIDE"
+			}, {
+				"id": "1521",
+				"label": "011 - ATLANTA KMA"
+			}, {
+				"id": "1522",
+				"label": "012 - CHARLESTON DISTRIBUTION CENTER"
+			}, {
+				"id": "1523",
+				"label": "014 - CINCINNATI KMA"
+			}, {
+				"id": "1524",
+				"label": "015 - FRED MEYER - PUYALLUP"
+			}, {
+				"id": "1525",
+				"label": "016 - COLUMBUS KMA"
+			}, {
+				"id": "1526",
+				"label": "018 - MICHIGAN KMA"
+			}, {
+				"id": "1527",
+				"label": "019 - SMITHS - LAYTON"
+			}, {
+				"id": "1528",
+				"label": "020 - RALPHS - GLENDALE"
+			}, {
+				"id": "1529",
+				"label": "021 - CENTRAL KMA"
+			}, {
+				"id": "1530",
+				"label": "022 - FRED MEYER - CLACKAMAS"
+			}, {
+				"id": "1531",
+				"label": "023 - DELTA - MEMPHIS"
+			}, {
+				"id": "1532",
+				"label": "024 - LOUISVILLE KMA"
+			}, {
+				"id": "1533",
+				"label": "025 - MEMPHIS"
+			}, {
+				"id": "1534",
+				"label": "026 - NASHVILLE KMA"
+			}, {
+				"id": "1535",
+				"label": "027 - RALPHS - PARAMOUNT"
+			}, {
+				"id": "1536",
+				"label": "029 - ROANOKE"
+			}, {
+				"id": "1537",
+				"label": "030 - RALPHS - COMPTON"
+			}, {
+				"id": "1538",
+				"label": "031 - NEVADA CONSOLIDATION CENTER"
+			}, {
+				"id": "1539",
+				"label": "032 - WT YOUNG"
+			}, {
+				"id": "1540",
+				"label": "033 - INTERSTATE"
+			}, {
+				"id": "1541",
+				"label": "034 - HOUSTON KMA"
+			}, {
+				"id": "1542",
+				"label": "035 - DALLAS KMA"
+			}, {
+				"id": "1543",
+				"label": "036 - DILLON"
+			}, {
+				"id": "1544",
+				"label": "037 - FRED MEYER - CHEHALIS"
+			}, {
+				"id": "1545",
+				"label": "038 - KING SOOPERS"
+			}, {
+				"id": "1546",
+				"label": "040 - KFP GROCERY PRODUCTS G.O."
+			}, {
+				"id": "1547",
+				"label": "042 - PONTIAC FOODS"
+			}, {
+				"id": "1548",
+				"label": "043 - KENLAKE FOODS"
+			}, {
+				"id": "1549",
+				"label": "046 - TARA FOODS"
+			}, {
+				"id": "1550",
+				"label": "049 - STATE AVE GROCERY PRODUCTS"
+			}, {
+				"id": "1551",
+				"label": "051 - SPRINGDALE DAIRY"
+			}, {
+				"id": "1552",
+				"label": "052 - CROSSROAD FARMS DAIRY"
+			}, {
+				"id": "1553",
+				"label": "053 - VANDERVOORT DAIRY"
+			}, {
+				"id": "1554",
+				"label": "054 - WESTOVER DAIRY"
+			}, {
+				"id": "1555",
+				"label": "055 - TAMARACK FARMS DAIRY"
+			}, {
+				"id": "1556",
+				"label": "056 - MICHIGAN DAIRY"
+			}, {
+				"id": "1557",
+				"label": "057 - ROCHESTER CHEESE"
+			}, {
+				"id": "1558",
+				"label": "060 - CORPORATE GENERAL OFFICE"
+			}, {
+				"id": "1559",
+				"label": "061 - CONSOLIDATION REPORTS"
+			}, {
+				"id": "1560",
+				"label": "065 - GODDARD DISTRIBUTION CENTER"
+			}, {
+				"id": "1561",
+				"label": "066 - SUNRISE R&D HOLDINGS, LLC"
+			}, {
+				"id": "1562",
+				"label": "070 - JACKSON ICE CREAM - HUTCH"
+			}, {
+				"id": "1563",
+				"label": "086 - PEYTONS MIDSOUTH"
+			}, {
+				"id": "1564",
+				"label": "087 - PEYTONS SOUTHEASTERN"
+			}, {
+				"id": "1565",
+				"label": "090 - JAYC STORES"
+			}, {
+				"id": "1566",
+				"label": "091 - NEVADA CONSOLIDATION CENTER"
+			}, {
+				"id": "1567",
+				"label": "092 - REGIONAL ACCOUNTING SERVICES CENTE"
+			}, {
+				"id": "1568",
+				"label": "097 - HARRIS TEETER"
+			}, {
+				"id": "1569",
+				"label": "101 - ANDERSON BAKERY"
+			}, {
+				"id": "1570",
+				"label": "102 - COUNTRY OVEN BAKERY"
+			}, {
+				"id": "1571",
+				"label": "128 - TOPVALCO INC"
+			}, {
+				"id": "1572",
+				"label": "143 - HEN-PIL INC"
+			}, {
+				"id": "1573",
+				"label": "160 - SHELBYVILLE DISTRIBUTION CTR"
+			}, {
+				"id": "1574",
+				"label": "177 - CRAWFORDSVILLE CHEESE"
+			}, {
+				"id": "1575",
+				"label": "181 - PEYTONS NORTHERN DISTRIBUTION CENT"
+			}, {
+				"id": "1576",
+				"label": "185 - PEYTONS PHOENIX"
+			}, {
+				"id": "1722",
+				"label": "1900 - NewD"
+			}, {
+				"id": "1577",
+				"label": "192 - K B SPECIALTY FOODS"
+			}, {
+				"id": "1578",
+				"label": "193 - DELAWARE DISTRIBUTION CENTER"
+			}, {
+				"id": "1579",
+				"label": "195 - DALLAS DISTRIBUTION CENTER"
+			}, {
+				"id": "1580",
+				"label": "207 - FRESH DEPOT"
+			}, {
+				"id": "1581",
+				"label": "214 - BENNETT SHOPPING CENTER"
+			}, {
+				"id": "1582",
+				"label": "215 - AUGUSTA SHOPPING CENTER"
+			}, {
+				"id": "1583",
+				"label": "216 - VALLEY GATEWAY SHOP CNTR"
+			}, {
+				"id": "1584",
+				"label": "217 - CINCINNATI/DAYTON SHOP CNTR"
+			}, {
+				"id": "1585",
+				"label": "220 - SMITHS SHOPPING CENTERS"
+			}, {
+				"id": "1586",
+				"label": "221 - DELIGHT PRODUCTS"
+			}, {
+				"id": "1587",
+				"label": "231 - SIMPSONVILLE FLORAL CENTER"
+			}, {
+				"id": "1588",
+				"label": "232 - NORTHERN FLORAL CENTER"
+			}, {
+				"id": "1589",
+				"label": "250 - MANUFACTURING CORPORATE"
+			}, {
+				"id": "1590",
+				"label": "252 - HERITAGE FARMS DAIRY"
+			}, {
+				"id": "1591",
+				"label": "253 - WINCHESTER FARMS DAIRY"
+			}, {
+				"id": "1592",
+				"label": "254 - BLUEFIELD BEVERAGE"
+			}, {
+				"id": "1593",
+				"label": "256 - GARLAND BEVERAGE"
+			}, {
+				"id": "1594",
+				"label": "258 - ATLANTA DAIRY"
+			}, {
+				"id": "1595",
+				"label": "321 - TECHNOLOGY DIVISION"
+			}, {
+				"id": "1596",
+				"label": "388 - PEYTONS FOUNTAIN"
+			}, {
+				"id": "1597",
+				"label": "410 - RALPHS - RIVERSIDE"
+			}, {
+				"id": "1598",
+				"label": "411 - ATLANTA - FT GILLEM LOGISTICS"
+			}, {
+				"id": "1599",
+				"label": "414 - CINCINNATI - WOODLAWN LOGISTIC"
+			}, {
+				"id": "1600",
+				"label": "415 - FRED MEYER - PUYALLUP"
+			}, {
+				"id": "1601",
+				"label": "418 - MICHIGAN KMA"
+			}, {
+				"id": "1602",
+				"label": "420 - RALPHS - GLENDALE"
+			}, {
+				"id": "1603",
+				"label": "422 - FRED MEYER - CLACKAMAS"
+			}, {
+				"id": "1604",
+				"label": "424 - LOUISVILLE - KDC LOGISTICS"
+			}, {
+				"id": "1605",
+				"label": "425 - MEMPHIS"
+			}, {
+				"id": "1606",
+				"label": "427 - RALPHS - PARAMOUNT"
+			}, {
+				"id": "1607",
+				"label": "429 - ROANOKE"
+			}, {
+				"id": "1608",
+				"label": "430 - RALPHS - COMPTON"
+			}, {
+				"id": "1609",
+				"label": "434 - HOUSTON KMA"
+			}, {
+				"id": "1610",
+				"label": "436 - DILLON STORES"
+			}, {
+				"id": "1611",
+				"label": "437 - FRED MEYER - CHEHALIS"
+			}, {
+				"id": "1612",
+				"label": "438 - KING SOOPERS"
+			}, {
+				"id": "1613",
+				"label": "440 - INDY -ENGLISH AVE LOGISTICS"
+			}, {
+				"id": "1614",
+				"label": "480 - CORPORATE LOGISTICS"
+			}, {
+				"id": "1615",
+				"label": "490 - JAYC LOGISTICS ICS"
+			}, {
+				"id": "1616",
+				"label": "491 - NEVADA CONSOLIDATION CENTER"
+			}, {
+				"id": "1617",
+				"label": "493 - OCONOMOWOC"
+			}, {
+				"id": "1618",
+				"label": "531 - ROUNDY'S CHICAGO"
+			}, {
+				"id": "1619",
+				"label": "533 - SMALL FORMAT KMA"
+			}, {
+				"id": "1620",
+				"label": "534 - ROUNDY'S WISCONSIN"
+			}, {
+				"id": "1621",
+				"label": "610 - C-STORE CORPORATE"
+			}, {
+				"id": "1622",
+				"label": "612 - KASH"
+			}, {
+				"id": "1623",
+				"label": "615 - DILLON STORES"
+			}, {
+				"id": "1624",
+				"label": "620 - KING SOOPERS"
+			}, {
+				"id": "1625",
+				"label": "623 - KING SOOPERS BAKERY"
+			}, {
+				"id": "1626",
+				"label": "660 - FRY'S FOOD STORES OF ARIZONA, INC"
+			}, {
+				"id": "1627",
+				"label": "669 - TH MIDWEST INC"
+			}, {
+				"id": "1628",
+				"label": "670 - TURKEY HILL MINIT MARKETS"
+			}, {
+				"id": "1629",
+				"label": "671 - JUNIOR FOOD STORES OF WEST FLORIDA"
+			}, {
+				"id": "1630",
+				"label": "672 - KWIK SHOP, INC."
+			}, {
+				"id": "1631",
+				"label": "673 - LOAF N JUG INC."
+			}, {
+				"id": "1632",
+				"label": "675 - QUIK STOP MARKETS, INC."
+			}, {
+				"id": "1633",
+				"label": "701 - FRED MEYER STORES"
+			}, {
+				"id": "1634",
+				"label": "702 - FRED MEYER JEWELRY"
+			}, {
+				"id": "1635",
+				"label": "703 - RALPHS"
+			}, {
+				"id": "1636",
+				"label": "704 - FOOD 4 LESS"
+			}, {
+				"id": "1637",
+				"label": "705 - QUALITY FOOD CENTER"
+			}, {
+				"id": "1638",
+				"label": "706 - SMITH'S FOOD & DRUG"
+			}, {
+				"id": "1639",
+				"label": "708 - FOOD 4 LESS - MIDWEST"
+			}, {
+				"id": "1640",
+				"label": "730 - LA HABRA BAKERY"
+			}, {
+				"id": "1641",
+				"label": "731 - CLACKAMAS BAKERY"
+			}, {
+				"id": "1642",
+				"label": "732 - LAYTON DOUGH"
+			}, {
+				"id": "1643",
+				"label": "750 - COMPTON CREAMERY"
+			}, {
+				"id": "1644",
+				"label": "751 - RIVERSIDE CREAMERY"
+			}, {
+				"id": "1645",
+				"label": "752 - SWAN ISLAND DAIRY"
+			}, {
+				"id": "1646",
+				"label": "753 - LAYTON DAIRY"
+			}, {
+				"id": "1647",
+				"label": "754 - TOLLESON DAIRY"
+			}, {
+				"id": "1648",
+				"label": "755 - MOUNTAIN VIEW FOODS"
+			}, {
+				"id": "1649",
+				"label": "791 - RIVERSIDE INSURANCE"
+			}, {
+				"id": "1650",
+				"label": "795 - TOLLESON DISTRIBUTION CENTER"
+			}, {
+				"id": "1651",
+				"label": "796 - LAYTON DISTRIBUTION CENTER"
+			}, {
+				"id": "1652",
+				"label": "797 - TOLLESON DEDICATED LOGISTICS"
+			}, {
+				"id": "1653",
+				"label": "817 - KR PROCUREMENT SOURCING, LLC"
+			}, {
+				"id": "1654",
+				"label": "821 - G.O. HQ"
+			}],
+			"type": "multiSelect",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "IN",
+				"label": "IN"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "PaymentPONumber",
+			"label": "Payment PO number",
+			"value": "",
+			"selected": null,
+			"optionDataKey": null,
+			"options": null,
+			"type": "text",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "Contains",
+				"label": "Contains"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "ClaimDate",
+			"label": "Claim date",
+			"value": "",
+			"selected": null,
+			"optionDataKey": null,
+			"options": null,
+			"type": "date",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "Between",
+				"label": "Between"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "IsAttachmentAvailable",
+			"label": "Is attachment available",
+			"value": {
+				"id": "",
+				"label": "---Select---"
+			},
+			"selected": null,
+			"options": [{
+				"id": "",
+				"label": "---Select---"
+			}, {
+				"id": "1",
+				"label": "Yes"
+			}, {
+				"id": "0",
+				"label": "No"
+			}],
+			"type": "select",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "EqualsTo",
+				"label": "EqualsTo"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": {
+				"required": true
+			},
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}]

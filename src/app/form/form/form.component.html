@@ -1,0 +1,13 @@
+ <app-saved-search [savedQueries] = "urls" [loadOperator] ="loadOperator"></app-saved-search>
+ <!-- <p-pickList modifiedPickList sourceHeader="Source List" targetHeader="Target List" [responsive]="true"  dragdrop="true" [source]="source" [target]="target">
+    <ng-template let-car pTemplate="item">
+        <div>{{car.label}}</div>
+</ng-template>
+ </p-pickList> -->
+<app-basic-form [formData] ="formData" columnCount="3" (clearForm) ="formClearEvent($event)" (formSubmit) ="formSubmitEvent($event)" [buttonConfig] ="buttonConfig"></app-basic-form>
+<!-- <app-advance-form (Query) = "saveQuery($event)" (clearForm) ="formClearEvent($event)" (formSubmit) ="formSubmitEvent($event)" [formData] ="formData" [loadOperator] ="loadOperator" [buttonConfig] ="buttonConfig"></app-advance-form> -->
+<!-- <app-button-group  (onClick) = "buttonClick($event,form)" [buttonConfig] = "buttonConfig" ></app-button-group> -->
+
+<ng-template let-car pTemplate="item">
+        <div>{{car.label}}</div>
+</ng-template>

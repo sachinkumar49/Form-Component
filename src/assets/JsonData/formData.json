@@ -1,0 +1,71 @@
+{
+		"items": [{
+			"id": "SupplierERPID",
+			"label": "Supplier ERP ID",
+			"value": "",
+			"selected": null,
+			"optionDataKey": null,
+			"options": null,
+			"type": "text",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "Contains",
+				"label": "Contains"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "SupplierName",
+			"label": "Supplier name",
+			"value": "",
+			"selected": null,
+			"optionDataKey": null,
+			"options": null,
+			"type": "text",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "Contains",
+				"label": "Contains"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": null,
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}, {
+			"id": "ClaimId",
+			"label": "Claim ID",
+			"value": "",
+			"selected": null,
+			"optionDataKey": null,
+			"options": null,
+			"type": "text",
+			"operatorDataKey": null,
+			"operator": {
+				"id": "EqualsTo",
+				"label": "EqualsTo"
+			},
+			"operatorOptions": null,
+			"placeholder": null,
+			"urlInfo": null,
+			"minCharacters": null,
+			"rules": {
+				"required":true
+			},
+			"maxResults": null,
+			"isFloat": null,
+			"setMaxToday": null,
+			"isReadOnly": null
+		}]
+}

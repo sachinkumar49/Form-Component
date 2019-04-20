@@ -1,0 +1,106 @@
+:host {
+  ::ng-deep {
+    .form-group {
+      max-width: 420px;
+      width:calc(100% - 15px);
+      margin: 0px 7.5px .7rem;
+      line-height: 1;
+      &:last-of-type {
+        margin-bottom: 1rem;
+      }
+
+      p-multiselect {
+        display: block;
+        height: 36px;
+      }
+
+      p-dropdown {
+        .ui-dropdown {
+          border: 1px solid #5a7481;
+          .ui-dropdown-label{
+            padding: 0.61rem;
+          }
+        }
+      }
+      .ui-dropdown {
+        width: 100% !important;
+        height: 36px;
+        border-color: #5a7481 !important;
+      }
+
+
+      p-calendar {
+        .ui-calendar {
+          display: block;
+
+          .ui-inputtext {
+            width: 100%;
+            cursor: pointer;
+            border-color: #5a7481 !important;
+            height: 36px !important;
+          }
+
+          .ui-datepicker {
+            z-index: 100;
+            padding: 0px;
+            min-width: 0% !important;
+
+            table th,
+            table td {
+              padding: 0.178em;
+
+              a,
+              span {
+                border-radius: 16px;
+              }
+            }
+
+            .ui-datepicker-header {
+              background-color: #0288D1;
+              color: #FFFFFF;
+
+              .ui-datepicker-next {
+                margin-right: 8em;
+
+                span:before {
+                  content: "\e905";
+                  margin-top: -.4em;
+                  color: #ffffff;
+                }
+              }
+
+              .ui-datepicker-prev span:before {
+                content: "\e904";
+                margin-top: -.4em;
+                color: #ffffff;
+              }
+
+              .ui-datepicker-title {
+                display: flex;
+                justify-content: space-between;
+
+                .ui-datepicker-month {
+                  width: 100px;
+                }
+
+              }
+            }
+
+            .ui-datepicker-calendar {
+              margin: 0px;
+
+              thead,
+              .ui-datepicker-header {
+                background-color: #0288D1;
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+      }
+    }
+    .flex-wrap{
+      margin:0px -7.5px;
+    }
+  }
+}

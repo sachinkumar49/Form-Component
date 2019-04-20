@@ -1,0 +1,19 @@
+<form *ngIf="advanceFormControl" [formGroup]="advanceFormControl">
+  <ng-container *ngFor="let formItem of advanceFormData;let i=index">
+    <div *ngIf="formItem.type != 'autocomplete'" [ngSwitch]="formItem.type" class="form-group">
+      <label class="form-check-label form-field-label" for="{{formItem.id}}"
+        [ngClass]="{'required_field': formItem.rules && formItem.rules.required}">
+        {{formItem.label}}
+      </label>
+      <div class="advance-combo-field">
+      <app-combo-field  [comboData]="formItem.fields" [comboFormControl] = "advanceFormControl.get('arrayAlias').controls[i]"></app-combo-field>
+      <span class="icon-delete-gray" (click) ="removeField(formItem,$event)"></span>
+      </div>
+    </div>
+  </ng-container>
+  <p-autoComplete [(ngModel)]="autoComplete" [ngModelOptions]="{standalone: true}" [suggestions]="searchResult"
+    (completeMethod)="autoCompleteSearch($event)" field="label" (onSelect)="selectedAutoComplete($event)">
+  </p-autoComplete>
+  <span class="icon-search-gray"></span>
+  <app-button-group (onClick)="AdvanceFormSearch($event)" *ngIf="buttonConfig" [buttonConfig]="buttonConfig"></app-button-group>
+</form>

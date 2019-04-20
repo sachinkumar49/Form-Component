@@ -1,0 +1,110 @@
+
+<form  [formGroup]="basicFormControl" *ngIf ="basicFormControl" class="flex-wrap d-flex">
+    <div [ngSwitch]="formItem.type.toLowerCase()" *ngFor="let formItem of basicFormData;let i=index" class="form-group" >
+        <!-- input type text email url money  -->
+        <label class = "form-check-label form-field-label" *ngIf ="formItem.label" [ngClass] = "{'required_field': formItem.rules && formItem.rules.required}">{{formItem.label}}</label>
+        <ng-template [ngSwitchCase] = "'text'" >
+            <input (blur) = "inputBlur(formItem, $event)" 
+            [pKeyFilter] = "formItem.keyFilter" 
+            autocomplete = "off"
+            class="form-control"
+            [formControlName] ="formItem.id" 
+            type="email"  
+            pInputText />
+        </ng-template> 
+        <!-- input type checkbox-->
+        <ng-template [ngSwitchCase] = "'checkbox'" >
+            <div class= "d-flex">
+                <p-checkbox 
+                    (onChange) = "checkboxEvent($event, formItem)"
+                    value="{{subItem.value}}" 
+                    label="{{subItem.label}}" 
+                    *ngFor ="let subItem of formItem.options" 
+                    inputId ="subItem.id"
+                    [formControl]="basicFormControl.controls[formItem.id]">
+                </p-checkbox>
+            </div>
+        </ng-template>
+        <!-- input type radio -->
+        <ng-template [ngSwitchCase] = "'radio'">
+            <div class= "d-flex">
+            <p-radioButton 
+                value="{{subItem.value}}" 
+                label="{{subItem.label}}" 
+                *ngFor ="let subItem of formItem.options" 
+                inputId ="subItem.id" 
+                name="groupname" 
+                (onClick) = "radioButtonEvent($event, formItem)"
+                [formControlName]= "formItem.id">
+            </p-radioButton>
+            </div>
+        </ng-template>
+        <!-- input type select -->
+        <ng-template [ngSwitchCase] = "'select'">
+            <p-dropdown 
+                (onBlur) = "selectBlurEvent($event, formItem)"
+                (onChange) = "selectChangeEvent($event, formItem)"
+                (onFocus) = "selectFocusEvent($event, formItem)"
+                (onClick) = "selectClickEvent($event, formItem)"
+                (onShow) = "selectShowEvent($event, formItem)"
+                (onHide) = "selectHideEvent($event, formItem)"
+                [options]="formItem.options" 
+                [formControlName] ="formItem.id">
+            </p-dropdown>
+        </ng-template>
+        <!-- input type textarea -->
+        <ng-template [ngSwitchCase] = "'textarea'">
+            <textarea class="form-control"
+                (onResize) = "textareaResizeEvent($event, formItem)" 
+                pInputTextarea 
+                [formControlName] ="formItem.id">
+            </textarea>
+        </ng-template>
+        <!-- input type multiselect -->
+        <ng-template [ngSwitchCase] = "'multiselect'" > 
+            <p-multiSelect 
+                filter="true" 
+                filterPlaceholder = "Search" 
+                [maxSelectedLabels] = "1"
+                [resetFilterOnHide] = "true" 
+                (onChange) = "multiselectChangeEvent($event, formItem)"
+                (onPanelHide) = "multiselectPanelHideEvent($event, formItem)"
+                (onPanelShow) = "multiselectPanelShowEvent($event, formItem)"
+                (onBlur) = "multiselectBlurEvent($event, formItem)"
+                (onFocus) = "multiselectFocusEvent($event, formItem)"
+                [options]= "formItem.options" 
+                [formControlName] ="formItem.id"  >
+            </p-multiSelect>
+        </ng-template> 
+        <!-- input type hidden -->
+        <ng-template [ngSwitchCase] = "'hidden'">
+            <input type = "hidden" pInputText />
+        </ng-template> 
+        <!-- input type date -->
+        <ng-template [ngSwitchCase] = "'date'">
+            <p-calendar  name ="date" inputStyleClass="form-control"
+                [locale]="locale"
+                dateFormat ="mm/dd/yy"
+                [minDate]="formItem?.rules?.min"
+                [maxDate]="formItem?.rules?.max"
+                yearRange = "1950:2050"
+                [selectionMode] ="formItem.selectionMode"
+                [numberOfMonths]="formItem.selectionMode=='range'?2:1"
+                [readonlyInput]="true" 
+                [formControlName] ="formItem.id"
+                (onBlur) = "datePickerBlurEvent($event,formItem)"
+                (onYearChange) = "datePickerYearChangeEvent($event,formItem)"
+                (onSelect) = "datePickerSelectEvent($event,formItem)"
+                (onClose) = "datePickerCloseEvent($event,formItem)"
+                (onInput) = "datePickerInputEvent($event,formItem)"
+                (onFocus) = "datePickerFocusEvent($event,formItem)"
+                (onTodayClick) = "datePickerTodayClickEvent($event,formItem)"
+                (onClearClick) = "datePickerClearClickEvent($event,formItem)"
+                (onMonthChange) = "datePickerMonthChangeEvent($event,formItem)" >
+            </p-calendar>
+        </ng-template>
+        <app-errors *ngIf ="basicFormControl.controls[formItem.id].errors" [label] ="formItem.label" [control] ="basicFormControl.controls[formItem.id]"></app-errors>   
+    </div>
+    <app-button-group class="form-group" (onClick) = "formReset($event)" [buttonConfig] ="buttonConfig" ></app-button-group>
+</form>
+

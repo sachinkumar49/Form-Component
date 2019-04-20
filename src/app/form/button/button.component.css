@@ -1,0 +1,74 @@
+:host /deep/ .ui-button:enabled:hover{
+        box-shadow: 0px 2px 5px grey;
+        background-color: #007ad9;
+        border-color: #007ad9;
+}
+:host /deep/  .ui-button:enabled:active{
+        box-shadow: 0px 5px 8px grey;
+        background-color: #007ad9;
+        border-color: #007ad9;
+}
+
+:host {
+    display: flex;
+    flex-direction:row-reverse;
+}
+:host p-button:not(:last-child){
+    margin-left:15px    
+}
+:host.button_row_reverse
+{
+    flex-direction: row-reverse;
+}
+:host.button_row
+{
+    flex-direction: row;
+}
+:host.button_column
+{
+    flex-direction: column;
+}
+:host.button_column_reverse
+{
+    flex-direction: column-reverse;
+}
+:host p-button {
+        margin: 15px 0px;     
+}
+:host p-button /deep/ button{
+ min-width:100px
+}
+:host.button_row p-button:not(:last-child){
+    margin-right:15px;
+    margin-left: 0px;  
+}
+:host.button_row_reverse p-button:not(:last-child){
+    margin-left:15px    
+}
+:host.button_column p-button,:host.button_column_reverse p-button{
+    margin-bottom:0px    
+}
+:host p-button /deep/ button.secondary,:host p-button /deep/ button.secondary:enabled:hover{
+    background-color: #009688;  
+    border:#009688; 
+}
+:host p-button /deep/ button.teritery,:host p-button /deep/ button.teritery:enabled:hover{
+    background-color: #5A7481;
+    border:#5A7481;   
+}
+:host p-button /deep/ button.flat{
+    background-color: transparent;
+    border:transparent;   
+    color: #0288D1;
+}
+
+:host p-button /deep/ button.flat:enabled:hover{
+    background-color: #fff;
+    border:#fff;   
+}
+:host p-button /deep/ button.flat:disabled,:host p-button /deep/ .ui-button:disabled,:host p-button /deep/ button.secondary:disabled,:host p-button /deep/ button.teritery:disabled{
+    opacity: .5 
+}
+
+
+

@@ -1,0 +1,37 @@
+.savedQuery{
+    display: flex;
+    justify-content: space-between;
+    li {
+        a{
+            font-weight: normal;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+}
+:host{
+    ::ng-deep{
+        .ui-accordion-content{
+            >ul{
+                >li:nth-child(even){
+                    background-color: #ced7dc !important; 
+                }
+            }
+         }
+         .modal{
+			.modal-dialog{
+				display: flex;
+				right: 0px;
+				min-height: 100vh;
+				margin: 0px;
+                position: absolute;
+                width:400px;
+				.modal-content{
+					border:none;
+					border-radius: 0;
+				}
+			}
+		}
+    }
+}
+
